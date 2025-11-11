@@ -40,15 +40,16 @@ div {
 #some-container {
     display: grid; 
     grid-template-columns: repeat(5, 80px); 
-    grid-auto-rows: 80px; 
-    gap: 10px; 
+    grid-auto-rows: 60px; 
+    gap: 30px; 
     justify-content: center; 
     align-content: start; 
     background-color: grey; 
-    padding: 10px; 
+    padding: 30px; 
     height: 400px; 
     width: max-content; 
 }
+
 
 button {
     color: white;

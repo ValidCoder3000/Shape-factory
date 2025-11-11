@@ -8,7 +8,6 @@ class Shape {
         this._color = color;
     }
 
-    
     get name(){return this._name}
     get color(){return this._color}
 
@@ -22,20 +21,23 @@ function createShape () {
     const colorSelector = document.getElementById("display-grid-tank").value;
     const gridBox = document.getElementById("some-container");
 
+    if (shapesArray.length >= 20) {
+        alert("You've reached the maximum number of shapes (20).")
+        return
+    }
     const newShape = new Shape(shapeSelector, colorSelector);
     shapesArray.push(newShape);
 
     const shapeBlock = document.createElement("div");
-    shapeBlock.classList.add('square');
-    if(shapeSelector === 'circle'){
-        shapeBlock.classList.add('circle');
-    }
+    shapeBlock.classList.add(shapeSelector);
+    shapeBlock.style.backgroundColor = colorSelector
 
-    shapeBlock.style.backgroundColor = colorSelector;
+    shapeBlock.addEventListener("click", function() {
+        console.log(newShape.getInfo())
+    })
 
-    gridBox.appendChild(shapeBlock);
-
+    gridBox.appendChild(shapeBlock)
 }
 
 const button = document.getElementById('thisButton');
-button.addEventListener('click', createShape )
+button.addEventListener('click', createShape)
