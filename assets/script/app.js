@@ -16,21 +16,6 @@ class Shape {
         return `${this._name} with color ${this._color}`
     }
 }
-// function createShape() {}
-
-
-// The ‘Create’ button will create a Shape object, save it in an array and add a new shape (div) to the grid. 
-
-// This div is the HTML representation of the JavaScript object.
-// Implement a function named createShape() to create and append a shape to the grid box.
-
-
-// const Hexagon = new Shape('Hexagon', 'purple')
-// console.log(Hexagon.getInfo())
-
-
-
-
 
 function createShape () {
     const shapeSelector = document.getElementById('display-grid-box').value;
