@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 h2 {
@@ -27,10 +27,11 @@ div {
 
 .square, .circle {
     width: 30px; 
+    border-radius: 10px;
     height: 30px; 
-    /* display: flex; 
+    display: flex; 
     justify-content: center; 
-    align-items: center;  */
+    align-items: center; 
 }
 
 .circle {
@@ -38,15 +39,16 @@ div {
 }
 
 #some-container {
+    border-radius: 10px;
     display: grid; 
     grid-template-columns: repeat(5, 80px); 
-    grid-auto-rows: 60px; 
+    grid-auto-rows: 80px; 
     gap: 30px; 
     justify-content: center; 
     align-content: start; 
     background-color: grey; 
-    padding: 30px; 
-    height: 400px; 
+    /* padding: 50px;  */
+    height: 425px; 
     width: max-content; 
 }
 
