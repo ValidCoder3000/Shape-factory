@@ -26,12 +26,12 @@ cd shape-factory
 
 5. Run the Application
 
-Simply open the index.html file in your browser.
-
-You can also use a local development server such as:
-
-npx live-server
-
-or
-
-python -m http.server
+    Simply open the index.html file in your browser.
+    
+    You can also use a local development server such as:
+    
+    npx live-server
+    
+    or
+    
+    python -m http.server
