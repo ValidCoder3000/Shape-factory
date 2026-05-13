@@ -37,4 +37,4 @@ cd shape-factory
     python -m http.server
 
 ## ScreenShot of Project In Action
-![SCREENSHOT OF PROJECT IN ACTION](./assets/media/AnotherScreenShot)
+![SCREENSHOT OF PROJECT IN ACTION](.assets/media/AnotherScreenShot.png)
